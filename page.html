@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberTrends - Услуги IT и дизайна</title>
+  <link rel="icon" type="image/jpeg" href="images/CT_logo.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .hero-bg {
+      background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 1%, transparent 1%);
+      background-size: 20px 20px;
+      opacity: 0.3;
+    }
+    .nav-link {
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #3B82F6;
+      transform: translateY(-2px);
+    }
+    .service-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .btn-primary {
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .btn-primary:hover {
+      background-color: #2563EB;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Навигация -->
+  <nav class="bg-blue-950 text-white p-4 sticky top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="images/CT_logo.jpg" alt="CyberTrends Logo" class="h-12 mr-3">
+        <h1 class="text-2xl font-bold">CyberTrends</h1>
+      </div>
+      <div class="space-x-6">
+        <a href="#services" class="nav-link hover:text-blue-400">Услуги</a>
+        <a href="#about" class="nav-link hover:text-blue-400">О нас</a>
+        <a href="#contact" class="nav-link hover:text-blue-400">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Герой-секция -->
+  <section class="hero-bg text-white py-24">
+    <div class="container mx-auto text-center relative z-10">
+      <h2 class="text-5xl font-bold mb-4">CyberTrends - Ваш IT-партнёр</h2>
+      <p class="text-xl mb-8">Диагностика и ремонт электроники, сборка ПК, профессиональный графический дизайн и веб-разработка.</p>
+      <a href="#contact" class="btn-primary bg-blue-600 text-white px-8 py-4 rounded-lg">Связаться с нами</a>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services" class="py-20">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 text-blue-950">Наши услуги</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="service-card bg-white p-6 rounded-xl shadow-md">
+          <img src="images/Ремонт и диагностика ПК.jpg" alt="Ремонт ПК" class="w-full h-48 object-cover rounded-t-xl mb-4">
+          <h3 class="text-xl font-semibold mb-4 text-blue-950">Ремонт и диагностика ПК</h3>
+          <p class="text-gray-600">Профессиональная диагностика и ремонт компьютеров, ноутбуков и другой электроники. Быстро и надёжно.</p>
+        </div>
+        <div class="service-card bg-white p-6 rounded-xl shadow-md">
+          <img src="images/Сборка ПК.jpg" alt="Сборка ПК" class="w-full h-48 object-cover rounded-t-xl mb-4">
+          <h3 class="text-xl font-semibold mb-4 text-blue-950">Сборка ПК</h3>
+          <p class="text-gray-600">Индивидуальная сборка компьютеров под ваши задачи: от игровых до профессиональных рабочих станций.</p>
+        </div>
+        <div class="service-card bg-white p-6 rounded-xl shadow-md">
+          <img src="images/Графический дизайн.jpg" alt="Графический дизайн" class="w-full h-48 object-cover rounded-t-xl mb-4">
+          <h3 class="text-xl font-semibold mb-4 text-blue-950">Графический дизайн</h3>
+          <p class="text-gray-600">Создание высококачественных дизайнов в Adobe Photoshop и CorelDraw для брендов, рекламы и медиа.</p>
+        </div>
+        <div class="service-card bg-white p-6 rounded-xl shadow-md">
+          <img src="images/Веб-разработка.png" alt="Веб-разработка" class="w-full h-48 object-cover rounded-t-xl mb-4">
+          <h3 class="text-xl font-semibold mb-4 text-blue-950">Веб-разработка</h3>
+          <p class="text-gray-600">Разработка современных веб-сайтов с уникальным дизайном и функционалом под ваш бизнес.</p>
+        </div>
+        <div class="service-card bg-white p-6 rounded-xl shadow-md">
+          <img src="images/Веб-дизайн.jpg" alt="Веб-дизайн" class="w-full h-48 object-cover rounded-t-xl mb-4">
+          <h3 class="text-xl font-semibold mb-4 text-blue-950">Веб-дизайн</h3>
+          <p class="text-gray-600">Создание стильных и удобных интерфейсов для сайтов и приложений, ориентированных на пользователя.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- О нас -->
+  <section id="about" class="bg-gray-100 py-20">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8 text-blue-950">О CyberTrends</h2>
+      <p class="text-lg max-w-2xl mx-auto text-gray-600">CyberTrends — это проект Казахстанского предпринимателя, который стремится предоставлять качественные IT-услуги и креативные решения. Мы гордимся вниманием к деталям и индивидуальным подходом к каждому клиенту.</p>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 text-blue-950">Свяжитесь с нами</h2>
+      <div class="max-w-lg mx-auto bg-white p-8 rounded-xl shadow-md text-center">
+        <p class="text-lg mb-6 text-gray-600">Напишите нам в WhatsApp для быстрой связи!</p>
+        <a href="https://wa.me/87787897458?text=Здравствуйте!%20Пишем%20с%20сайта%20CyberTrends" target="_blank" class="btn-primary bg-green-600 text-white px-8 py-4 rounded-lg">Написать в WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="bg-blue-950 text-white py-8">
+    <div class="container mx-auto text-center">
+      <p>© 2025 CyberTrends. Все права защищены.</p>
+    </div>
+  </footer>
+</body>
+</html>
